@@ -221,243 +221,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Icy-platforms_0
+      name: Big_Icy_Platforms
       rect:
         serializedVersion: 2
-        x: 30
-        y: 1170
-        width: 1143
-        height: 836
+        x: 34
+        y: 1176
+        width: 1141
+        height: 834
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1103818f9300b2320800000000000000
-      internalID: 2534119464301506577
+      spriteID: 877e91524e96e2147a8fecb46878decf
+      internalID: -2115690391
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Icy-platforms_1
+      name: Small_Icy_Platforms
       rect:
         serializedVersion: 2
-        x: 1260
-        y: 1211
-        width: 684
-        height: 512
+        x: 1261
+        y: 1206
+        width: 692
+        height: 520
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d5fc514d023bef160800000000000000
-      internalID: 7061278219342040925
+      spriteID: ed8c820b16c1ee64085a5433a0c31203
+      internalID: 952046133
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Icy-platforms_2
+      name: Icy_platform
       rect:
         serializedVersion: 2
-        x: 61
-        y: 1196
-        width: 32
-        height: 7
+        x: 46
+        y: 734
+        width: 799
+        height: 355
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1a7b7492a0969b7f0800000000000000
-      internalID: -596329983286724703
+      spriteID: 5f9ac6db250b3ab44ad512d1fee2bd37
+      internalID: -1546008472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Icy-platforms_3
+      name: Ice_Cube
       rect:
         serializedVersion: 2
-        x: 1675
-        y: 1115
-        width: 12
-        height: 25
+        x: 960
+        y: 530
+        width: 510
+        height: 562
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e94136ac57d1e2f00800000000000000
-      internalID: 1093844151241479326
+      spriteID: 5361d5302b7ed4d419643ddf239960d1
+      internalID: -1044933876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Icy-platforms_4
+      name: Bon_Fire
       rect:
         serializedVersion: 2
-        x: 47
-        y: 735
-        width: 796
-        height: 351
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b3f310b149aebc750800000000000000
-      internalID: 6326408023401119547
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Icy-platforms_5
-      rect:
-        serializedVersion: 2
-        x: 963
-        y: 542
-        width: 490
-        height: 549
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b89e76935618fd670800000000000000
-      internalID: 8565707288036764043
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Icy-platforms_6
-      rect:
-        serializedVersion: 2
-        x: 1549
-        y: 786
+        x: 1552
+        y: 781
         width: 256
-        height: 310
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 365
+      alignment: 9
+      pivot: {x: 0.5500572, y: 0.554068}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a90b72b3a6682be30800000000000000
-      internalID: 4517821167023141018
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Icy-platforms_7
-      rect:
-        serializedVersion: 2
-        x: 1551
-        y: 991
-        width: 9
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: db606935f82c54620800000000000000
-      internalID: 2757824267672749757
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Icy-platforms_8
-      rect:
-        serializedVersion: 2
-        x: 1776
-        y: 975
-        width: 27
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 60a2521e5955217d0800000000000000
-      internalID: -2949200703758456314
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Icy-platforms_9
-      rect:
-        serializedVersion: 2
-        x: 1832
-        y: 987
-        width: 36
-        height: 78
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d9a5a2868f26b5610800000000000000
-      internalID: 1610990110754101917
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Icy-platforms_10
-      rect:
-        serializedVersion: 2
-        x: 1789
-        y: 916
-        width: 22
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 54d91084207b1af50800000000000000
-      internalID: 6890990125279452485
+      spriteID: 704fc3eb8d6479249a5c11963082fc46
+      internalID: 1089921717
       vertices: []
       indices: 
       edges: []
@@ -466,14 +334,25 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 74a4bf42f5eb1ba48a7fade8647d040c
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Big_Icy_Platforms: -2115690391
+      Bon_Fire: 1089921717
+      Ice_Cube: -1044933876
+      Icy-platforms_10: 1409799899
+      Icy-platforms_2: 1398529470
+      Icy-platforms_3: -1704690885
+      Icy-platforms_7: 905764071
+      Icy-platforms_8: 1741199519
+      Icy-platforms_9: -897345351
+      Icy_platform: -1546008472
+      Small_Icy_Platforms: 952046133
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

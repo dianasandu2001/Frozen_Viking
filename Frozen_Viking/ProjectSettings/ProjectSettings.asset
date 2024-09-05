@@ -876,8 +876,8 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Frozen_Viking
-  metroPackageVersion: 
+  metroPackageName: FrozenViking
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -885,7 +885,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: Frozen_Viking
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: Frozen_Viking
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
