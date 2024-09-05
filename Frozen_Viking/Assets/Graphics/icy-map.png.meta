@@ -223,7 +223,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icy-map_0: 8023367307117658431
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

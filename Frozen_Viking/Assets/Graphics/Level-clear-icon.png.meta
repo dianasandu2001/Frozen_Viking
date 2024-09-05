@@ -273,7 +273,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Level-clear-icon_0: -7049999659866253099
+      Level-clear-icon_1: -2938848906194554276
+      Level-clear-icon_2: -5748992929559256069
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
