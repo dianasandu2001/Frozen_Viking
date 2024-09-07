@@ -4,6 +4,7 @@ public class Character_Control : MonoBehaviour
 {
     public float move_speed;
     public float jump_force;
+    public float double_force;
 
     public Animator animator;
     public Rigidbody2D rb2D;
@@ -12,6 +13,7 @@ public class Character_Control : MonoBehaviour
     public float ground_check_radius;
     public LayerMask ground_check_layer;
     public bool grounded;
+    public bool mid_air;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -41,6 +43,13 @@ public class Character_Control : MonoBehaviour
         {
             rb2D.velocity = new Vector2(0, jump_force);
             animator.SetTrigger("Jump");
+            mid_air = true;
+        }
+        else if (Input.GetButtonDown("Jump") && grounded == false && mid_air == true)
+        {
+            rb2D.velocity = new Vector2(0, double_force);
+            animator.SetTrigger("Jump");
+            mid_air = false;
         }
     }
 }
