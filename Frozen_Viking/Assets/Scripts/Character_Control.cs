@@ -19,9 +19,7 @@ public class Character_Control : MonoBehaviour
     public bool mid_air;
 
     public Image filler;  // this will ajustthe fill amount value
-    public float health;  // current healt
-    public float prev_health;  // health before we took dmg
-    public float max_health;  // what is the max val of health
+
     public float counter;  // from 0 to max counter, and starts again from 0 to max counter in seconds
     public float max_counter;  // how long it takes to animate the filler
 
@@ -65,7 +63,7 @@ public class Character_Control : MonoBehaviour
         // heath baar stuff
         if(counter > max_counter)
         {
-            prev_health = health;
+            Game_Manager.manager.prev_health = Game_Manager.manager.health;
             counter = 0;
         }
         else
@@ -74,7 +72,7 @@ public class Character_Control : MonoBehaviour
         }
 
 
-        filler.fillAmount = Mathf.Lerp(prev_health/max_health, health/max_health, counter/max_counter);
+        filler.fillAmount = Mathf.Lerp(Game_Manager.manager.prev_health / Game_Manager.manager.max_health, Game_Manager.manager.health / Game_Manager.manager.max_health, counter/max_counter);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -91,12 +89,24 @@ public class Character_Control : MonoBehaviour
         {
             Take_Damage(15);
         }
+        if(collision.gameObject.CompareTag("Mover")){
+            transform.parent = collision.gameObject.transform;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Mover"))
+        {
+            transform.parent = null;
+
+        }
     }
 
     public void Take_Damage(float damage)
     {
-        prev_health = filler.fillAmount * max_health;
+        Game_Manager.manager.prev_health = filler.fillAmount * Game_Manager.manager.max_health;
         counter = 0;
-        health -= damage;
+        Game_Manager.manager.health -= damage;
     }    
 }
