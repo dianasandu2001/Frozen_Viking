@@ -60,7 +60,7 @@ public class Character_Control : MonoBehaviour
             mid_air = false;
         }
 
-        // heath baar stuff
+        // heath bar stuff
         if(counter > max_counter)
         {
             Game_Manager.manager.prev_health = Game_Manager.manager.health;
