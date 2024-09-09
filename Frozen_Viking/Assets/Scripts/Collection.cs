@@ -20,7 +20,7 @@ public class Collection : MonoBehaviour
     {
         Debug.Log("AudioSource found: " + heart_FX.name);
         heart_FX.Play();
-        //health += 20;
+        Game_Manager.manager.health += 20;
         this.gameObject.SetActive(false);
     }
 }

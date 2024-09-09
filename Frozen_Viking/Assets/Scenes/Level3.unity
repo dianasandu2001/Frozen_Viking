@@ -7945,7 +7945,7 @@ Transform:
   m_GameObject: {fileID: 1323372010}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7, y: 0.23, z: 0}
+  m_LocalPosition: {x: 48.4, y: 12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8116,9 +8116,6 @@ MonoBehaviour:
   grounded: 0
   mid_air: 0
   filler: {fileID: 328285302}
-  health: 100
-  prev_health: 100
-  max_health: 100
   counter: 0
   max_counter: 2
 --- !u!1 &1468041823

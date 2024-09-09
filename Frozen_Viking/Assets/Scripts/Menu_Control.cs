@@ -8,6 +8,10 @@ public class Menu_Control : MonoBehaviour
         SceneManager.LoadScene("Map");
     }
 
+    public void Tutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
     public void Save()
     {
         Debug.Log("Save pressed");
@@ -18,5 +22,6 @@ public class Menu_Control : MonoBehaviour
     {
         Debug.Log("Load pressed");
         Game_Manager.manager.Load();
+        SceneManager.LoadScene("Map");
     }
 }
