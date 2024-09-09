@@ -218,7 +218,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI-sprites_0
+      name: Background
       rect:
         serializedVersion: 2
         x: 242
@@ -240,7 +240,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI-sprites_1
+      name: Empty
       rect:
         serializedVersion: 2
         x: 450
@@ -284,7 +284,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI-sprites_3
+      name: Filler
       rect:
         serializedVersion: 2
         x: 448
@@ -339,10 +339,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Background: 6638501120308572207
+      Empty: -6701148746456080760
+      Filler: 4466998647548330282
       Heart: -2702729657114411495
-      UI-sprites_0: 6638501120308572207
-      UI-sprites_1: -6701148746456080760
-      UI-sprites_3: 4466998647548330282
       UI-sprites_4: -881479283162086870
       UI-sprites_5: -7281738874854508258
       UI-sprites_6: -239297126808833378

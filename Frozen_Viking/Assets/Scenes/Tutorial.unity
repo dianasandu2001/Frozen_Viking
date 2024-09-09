@@ -2589,7 +2589,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1411369541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2614,6 +2614,12 @@ MonoBehaviour:
     m_Bits: 64
   grounded: 0
   mid_air: 0
+  filler: {fileID: 0}
+  health: 0
+  prev_health: 0
+  max_health: 0
+  counter: 0
+  max_counter: 0
 --- !u!1 &1468041823
 GameObject:
   m_ObjectHideFlags: 0
@@ -3368,7 +3374,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5583177659686433172, guid: 7ae97a7e00ed98c4c998d597c1c73af4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.08
+      value: 1.04
       objectReference: {fileID: 0}
     - target: {fileID: 5583177659686433172, guid: 7ae97a7e00ed98c4c998d597c1c73af4, type: 3}
       propertyPath: m_LocalPosition.z

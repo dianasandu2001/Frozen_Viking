@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Character_Control : MonoBehaviour
 {
@@ -14,6 +15,13 @@ public class Character_Control : MonoBehaviour
     public LayerMask ground_check_layer;
     public bool grounded;
     public bool mid_air;
+
+    public Image filler;  // this will ajustthe fill amount value
+    public float health;  // current healt
+    public float prev_health;  // health before we took dmg
+    public float max_health;  // what is the max val of health
+    public float counter;  // from 0 to max counter, and starts again from 0 to max counter in seconds
+    public float max_counter;  // how long it takes to animate the filler
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -51,5 +59,34 @@ public class Character_Control : MonoBehaviour
             animator.SetTrigger("Jump");
             mid_air = false;
         }
+
+        // heath baar stuff
+        if(counter > max_counter)
+        {
+            prev_health = health;
+            counter = 0;
+        }
+        else
+        {
+            counter += Time.deltaTime;
+        }
+
+
+        filler.fillAmount = Mathf.Lerp(prev_health/max_health, health/max_health, counter/max_counter);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Trap"))
+        {
+            Take_Damage(15);
+        }
+    }
+
+    public void Take_Damage(float damage)
+    {
+        prev_health = filler.fillAmount * max_health;
+        counter = 0;
+        health -= damage;
+    }    
 }
