@@ -15,4 +15,15 @@ public class Load_Level : MonoBehaviour
     {
         
     }
+
+    public void Cleared (bool is_cleared)
+    {
+        if (is_cleared == true)
+        {
+            // display lvl clear sign
+            transform.GetChild(0).gameObject.GetComponent<Renderer>().enabled = true;
+            // because the level is passed we want to disable collider
+            GetComponent<CircleCollider2D>().enabled = false;
+        }
+    }
 }

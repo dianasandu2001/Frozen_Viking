@@ -4,6 +4,7 @@ public class Game_Manager : MonoBehaviour
 {
     public static Game_Manager manager;
 
+    public string current_level;
     private void Awake()
     {
         // Singleton, we want to make sure that there is only one instance of GameManager in our game

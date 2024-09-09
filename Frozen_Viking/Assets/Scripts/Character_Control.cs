@@ -1,5 +1,7 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Character_Control : MonoBehaviour
 {
@@ -73,6 +75,14 @@ public class Character_Control : MonoBehaviour
 
 
         filler.fillAmount = Mathf.Lerp(prev_health/max_health, health/max_health, counter/max_counter);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Level_End"))
+        {
+            SceneManager.LoadScene("Map");
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

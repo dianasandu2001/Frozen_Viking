@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Trap
   - Level_Trigger
+  - Level_End
   layers:
   - Default
   - TransparentFX
