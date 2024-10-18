@@ -23,6 +23,8 @@ public class Character_Control : MonoBehaviour
     public float counter;  // from 0 to max counter, and starts again from 0 to max counter in seconds
     public float max_counter;  // how long it takes to animate the filler
 
+    public GameObject endScreen;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -35,7 +37,7 @@ public class Character_Control : MonoBehaviour
     {
         grounded = Physics2D.OverlapCircle(ground_check_position.position, ground_check_radius, ground_check_layer);
         transform.Translate(Input.GetAxis("Horizontal") * move_speed * Time.deltaTime, 0, 0);
-        if (Input.GetAxisRaw("Horizontal") != 0 )
+        if (Input.GetAxisRaw("Horizontal") != 0)
         {
             // This means you either have a or d pressed
             transform.localScale = new Vector3(Input.GetAxisRaw("Horizontal"), 1, 1);
@@ -61,7 +63,7 @@ public class Character_Control : MonoBehaviour
         }
 
         // heath bar stuff
-        if(counter > max_counter)
+        if (counter > max_counter)
         {
             Game_Manager.manager.prev_health = Game_Manager.manager.health;
             counter = 0;
@@ -71,8 +73,12 @@ public class Character_Control : MonoBehaviour
             counter += Time.deltaTime;
         }
 
+        filler.fillAmount = Mathf.Lerp(Game_Manager.manager.prev_health / Game_Manager.manager.max_health, Game_Manager.manager.health / Game_Manager.manager.max_health, counter / max_counter);
 
-        filler.fillAmount = Mathf.Lerp(Game_Manager.manager.prev_health / Game_Manager.manager.max_health, Game_Manager.manager.health / Game_Manager.manager.max_health, counter/max_counter);
+        if (Game_Manager.manager.health < 0)
+        {
+            Die();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -92,6 +98,12 @@ public class Character_Control : MonoBehaviour
         if(collision.gameObject.CompareTag("Mover")){
             transform.parent = collision.gameObject.transform;
         }
+
+        if (collision.gameObject.CompareTag("Ice"))
+        {
+            Die();
+            Debug.Log("Squished");
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -109,4 +121,12 @@ public class Character_Control : MonoBehaviour
         counter = 0;
         Game_Manager.manager.health -= damage;
     }    
+
+    public void Die()
+    {
+        Debug.Log("I died");
+        endScreen.SetActive(true);
+        //Time.timeScale = 0f; // to stop movement
+        //Time.timeScale = 1f; // to bring movement back
+    }
 }
