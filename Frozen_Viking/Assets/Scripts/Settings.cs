@@ -1,8 +1,9 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Settings : MonoBehaviour
 {
-    public GameObject optionsPanel;
+    public GameObject settingsPanel;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -16,15 +17,24 @@ public class Settings : MonoBehaviour
         
     }
 
-    public void ShowOptions(GameObject Panel)
+    public void ShowOptions()
     {
-        if (Panel.activeSelf == false)
+        if (settingsPanel.activeSelf == false)
         {
-            Panel.SetActive(true);
+            settingsPanel.SetActive(true);
         }
         else
         {
-            Panel.SetActive(false);
+            settingsPanel.SetActive(false);
         }
+    }
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("Main_Menu");
+    }
+
+    public void test()
+    {
+        Debug.Log("clicked");
     }
 }
